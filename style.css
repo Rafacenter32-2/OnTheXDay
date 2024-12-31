@@ -1,0 +1,45 @@
+#topbar{
+    background-color: rgb(58, 67, 77);
+    color: white;
+    padding: 2mm;
+    display: flex;
+    flex-direction: row;
+    height: 10mm;
+    gap: 5mm;
+}
+#topbar button{
+    all: unset;
+    background-color: rgb(46, 51, 56);
+    padding: 2mm;
+    border-radius: 3mm;
+    box-shadow: 0.3mm 0.3mm red ,-0.3mm -0.3mm blue;
+    transition: 300ms;
+    cursor: pointer ;
+}
+#topbar button:hover{
+    box-shadow: 1mm 1mm red ,-1mm -1mm blue;
+}
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+}
+canvas{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+#text{
+    all: unset;
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    background-color: rgba(0, 0, 0, 0.7);
+}
