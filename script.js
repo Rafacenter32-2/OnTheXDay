@@ -35,7 +35,7 @@ $(()=>{
             let oldpos = {
                 x:0,y:0
             }
-            for (let index = 0; index < (daysIntoYear(time)); index++) {
+            for (let index = 0; index < (daysIntoYear(time) * 4); index++) {
                 setTimeout(() => {   
                     ctx.drawImage(puffy,Math.random()*canvas.width- (puffy.width /2),Math.random()*canvas.height - (puffy.height /2))
                     $(".count").text((index + 1).toString())
